@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
             Scaffold(
                 topBar = { TopBar() },
                 backgroundColor = colorResource(id = R.color.colorPrimaryDark)
-            ) { padding -> // We pass scaffold's inner padding to content. That's why we use Box.
+            ) { padding -> // We need to pass scaffold's inner padding to content. That's why we use Box.
                 Box(modifier = Modifier.padding(padding)) {
                     Navigation()
                 }
